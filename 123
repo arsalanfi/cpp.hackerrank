@@ -12,41 +12,43 @@ int main() {
     cin >> a ;
     cin >> b ;
     
-    if (a < 10){
     for (int i=a ; i<= b;i++){
-    switch (i){
-        case 1 :
-        cout << "one" << endl;
-        case 2 : 
-        cout << "two" << endl;
-        case 3 :
-        cout << "three" << endl;
-        case 4 :
-        cout << "four" << endl;
-        case 5 : 
-        cout << "five" << endl;
-        case 6 :
-        cout << "six" << endl;
-        case 7 :
-        cout << "seven" << endl;
-        case 8 : 
-        cout << "eight" << endl;
-        case 9 :
-        cout << "nine" << endl;
+
+        switch (a){
+            case 0 :
+            cout << "we can't take 0 for input";
+            break;
+            case 1 :
+            cout << "one" << endl;
+            case 2 : 
+            cout << "two" << endl;
+            case 3 :
+            cout << "three" << endl;
+            case 4 :
+            cout << "four" << endl;
+            case 5 : 
+            cout << "five" << endl;
+            case 6 :
+            cout << "six" << endl;
+            case 7 :
+            cout << "seven" << endl;
+            case 8 : 
+            cout << "eight" << endl;
+            case 9 :
+            cout << "nine" << endl;
+            
+                }
+            
+            if (a > 9){
+                answer = a % 2 ;
+                if (answer == 0){
+                    cout << "even \n";
+                }else
+                    cout <<"odd \n";
         
             }
-        if (a > 9){
-        answer = a % 2 ;
-            if (answer == 0)
-                cout << "even \n"<<endl;
-             else
-                cout <<"odd" << endl;
     
+        a++;
         }
-    
-   
-    a++;
-    }
     return 0;
-}
 }
